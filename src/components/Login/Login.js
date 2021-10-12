@@ -12,15 +12,22 @@ const Login = () => {
                 </div>
             </div>
             <div className="right">
-                <form >
-                    <div className="form-group">
-                        <div class="form-group">
-                            <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off" />
-                            <i class="input-icon uil uil-at"></i>
-                        </div>
-                    </div>
-                </form>
+              <form >
+                <h2 style ={{marginBottom: "100px", color: "#101d29", fontSize: '44px', textAlign: 'center'}}>Please Login</h2>
+                <div className="form-group">
+                    <input type="email" name="logemail" placeholder="Email address"/>
+                    <i className="far fa-envelope"></i>
+                </div>
+                
+                <div className="form-group">
+                    <input type="password" name="password" placeholder ="Password"/>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <button className="btn" type="submit" value="Login" >Login</button>
+              </form>
+                <div className="icon-group">
 
+                </div>
             </div>
         </div>
     );
